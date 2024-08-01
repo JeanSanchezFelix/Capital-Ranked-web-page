@@ -35,7 +35,7 @@ class NewNotificationsDemo extends React.Component {
           </span>
           <p className="m-0 overflow-hidden">
           {/* eslint-disable */}
-          <a href="#">Jeniffer Willington </a>has just endorsed you with 50 points!
+          <a href="#">Sekou Samassi </a>has just endorsed you with 50 points!
           {/* eslint-enable */}
             <time className="help-block m-0">
               30 sec ago

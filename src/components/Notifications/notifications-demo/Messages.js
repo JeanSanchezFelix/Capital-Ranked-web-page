@@ -22,8 +22,8 @@ class MessagesDemo extends React.Component {
             <i className="status status-bottom bg-success" />
           </span>
           <time className="text-link help float-right">10 sec ago</time>
-          <h6 className="m-0 fw-bold mb-1">Chris Gray</h6>
-          <p className="deemphasize text-ellipsis m-0">Hey! What&apos;s up? So many times since we</p>
+          <h6 className="m-0 fw-bold mb-1">C1 ChatBot</h6>
+          <p className="deemphasize text-ellipsis m-0">James just passed you on the leaderboard!</p>
         </ListGroupItem>
         <ListGroupItem className={s.listGroupItem}>
           <span className={[s.notificationIcon, 'thumb-sm'].join(' ')}>
@@ -31,7 +31,7 @@ class MessagesDemo extends React.Component {
             <i className="status status-bottom bg-success" />
           </span>
           <time className="text-link help float-right">2 min ago</time>
-          <h6 className="m-0 mb-1">Jamey Brownlow</h6>
+          <h6 className="m-0 mb-1">CHAT</h6>
           <p className="deemphasize text-ellipsis m-0">Good news coming tonight. Seems they agreed to proceed</p>
         </ListGroupItem>
         <ListGroupItem className={s.listGroupItem}>

@@ -27,7 +27,7 @@ class Static extends React.Component {
         {
           id: 1,
           picture: require("../../../assets/tables/1.png"), // eslint-disable-line global-require
-          description: "Palo Alto",
+          description: "Shopping",
           info: {
             type: "JPEG",
             dimensions: "200x150",
