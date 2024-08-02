@@ -3,10 +3,12 @@ html {
   font-size: $font-size-initial;
 }
 
+
+// Important
 body {
   overflow-x: hidden;
   color: $text-color;
-  background: $main-gradient;
+  background: linear-gradient(to bottom, #999999, #333333); 
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

@@ -26,7 +26,7 @@ class Static extends React.Component {
       tableStyles: [
         {
           id: 1,
-          picture: require("../../../assets/tables/1.png"), // eslint-disable-line global-require
+          picture: "https://t3.ftcdn.net/jpg/05/60/17/66/360_F_560176615_cUua21qgzxDiLiiyiVGYjUnLSGnVLIi6.jpg",
           description: "Shopping",
           info: {
             type: "JPEG",
@@ -41,8 +41,8 @@ class Static extends React.Component {
         },
         {
           id: 2,
-          picture: require("../../../assets/tables/2.png"), // eslint-disable-line global-require
-          description: "The Sky",
+          picture: "https://www.shutterstock.com/image-illustration/energy-utility-bill-icon-clipart-260nw-1420614590.jpg",
+          description: "Bills & Utilities",
           info: {
             type: "PSD",
             dimensions: "2400x1455",
@@ -56,15 +56,15 @@ class Static extends React.Component {
         },
         {
           id: 3,
-          picture: require("../../../assets/tables/3.png"), // eslint-disable-line global-require
-          description: "Down the road",
+          picture: "https://t3.ftcdn.net/jpg/05/60/17/66/360_F_560176615_cUua21qgzxDiLiiyiVGYjUnLSGnVLIi6.jpg", // Use the URL
+          description: "Personal",
           label: {
             colorClass: "primary",
-            text: "INFO!",
+            text: "ALERT!",
           },
           info: {
             type: "JPEG",
-            dimensions: "200x150",
+            dimensions: "400 x 400",
           },
           date: new Date("September 14, 2012"),
           size: "49.0 KB",
@@ -75,8 +75,8 @@ class Static extends React.Component {
         },
         {
           id: 4,
-          picture: require("../../../assets/tables/4.png"), // eslint-disable-line global-require
-          description: "The Edge",
+          picture: "https://cdn.vectorstock.com/i/500p/75/40/popcorn-icon-symbol-logo-vector-48497540.jpg",
+          description: "Entertainment",
           info: {
             type: "PNG",
             dimensions: "210x160",
@@ -90,8 +90,8 @@ class Static extends React.Component {
         },
         {
           id: 5,
-          picture: require("../../../assets/tables/5.png"), // eslint-disable-line global-require
-          description: "Fortress",
+          picture: "https://www.pngitem.com/pimgs/m/16-169702_transparent-business-person-png-transparent-professional-icon-png.png", // eslint-disable-line global-require
+          description: "Professional Services",
           info: {
             type: "JPEG",
             dimensions: "1452x1320",
@@ -163,8 +163,8 @@ class Static extends React.Component {
               <Table lg={12} md={12} sm={12} striped>
                 <thead>
                   <tr className="fs-sm">
-                    <th className="hidden-sm-down">#</th>
-                    <th>Picture</th>
+                    <th className="hidden-sm-down">Rank</th>
+                    <th>Spending</th>
                     <th>Description</th>
                     <th className="hidden-sm-down">Info</th>
                     <th className="hidden-sm-down">Date</th>

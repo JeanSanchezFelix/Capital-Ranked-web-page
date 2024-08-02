@@ -53,18 +53,29 @@
 .logo {
   margin: 20px 0 55px;
   font-size: 18px;
-  width: 100%;
-  font-weight: $font-weight-normal;
+  width: 69%;
+  font-weight: normal; /* Adjust as needed if you're using SCSS or CSS */
   text-align: center;
   text-transform: uppercase;
 
   a {
-    color: $icon-color;
+    color: #000; /* Replace with your actual color variable or value */
     padding: 0 5px;
     text-decoration: none;
     white-space: nowrap;
   }
+
+  img {
+    width: 180px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is displayed correctly */
+    margin: 0; /* Reset margin to use positioning */
+  
+    position: relative;
+    top: -40px; /* Elevate the image */
+  }
 }
+
 
 .sidebarOpen {
   height: auto !important;

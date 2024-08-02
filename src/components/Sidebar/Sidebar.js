@@ -15,7 +15,6 @@ import TablesIcon from '../Icons/SidebarIcons/TablesIcon';
 import ComponentsIcon from '../Icons/SidebarIcons/ComponentsIcon';
 
 
-
 class Sidebar extends React.Component {
     static propTypes = {
         sidebarStatic: PropTypes.bool,
@@ -75,10 +74,12 @@ class Sidebar extends React.Component {
                     this.element = nav;
                 }}
             >
-                <header className={s.logo}>
-                    <a href="https://demo.flatlogic.com/light-blue-react/">Light <span
-                        className="fw-bold">Blue</span></a>
-                </header>
+            <header className={s.logo}>
+                <a href="http://localhost:3000/#/app/main/dashboard">
+                    <img src="/logo.png" alt="Company Logo" className={s.logoImage} />
+                     <span className="fw-bold"></span>
+                </a>
+            </header>
                 <ul className={s.nav}>
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem => this.props.dispatch(changeActiveSidebarItem(activeItem))}
@@ -89,7 +90,7 @@ class Sidebar extends React.Component {
                         link="/app/main"
                         index="main"
                     />
-                    <h5 className={[s.navTitle, s.groupTitle].join(' ')}>TEMPLATE</h5>
+                    <h5 className={[s.navTitle, s.groupTitle].join(' ')}>TOOLS</h5>
                     <LinksGroup
                         onActiveSidebarItemChange={t => this.props.dispatch(changeActiveSidebarItem(t))}
                         activeItem={this.props.activeItem}
@@ -122,9 +123,7 @@ class Sidebar extends React.Component {
                 </ul>
   
                 {/* eslint-enable */}
-                <h5 className={s.navTitle}>
-                    PROJECTS
-                </h5>
+                
                 <div className={s.sidebarAlerts}>
                     {this.props.alertsList.map(alert => // eslint-disable-line
                         <Alert

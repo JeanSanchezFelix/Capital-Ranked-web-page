@@ -23,7 +23,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(farthest-side ellipse at 10% 0, #333867 20%, #17193B);
+  background: radial-gradient(farthest-side ellipse at 10% 0, hsl(0, 100%, 50%) 20%, #3b2617);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 55;
@@ -86,7 +86,7 @@
 
 
 .widget {
-  color: $content-color;
+  color: $white;
   display: block;
   position: relative;
   margin-bottom: $grid-gutter-width;

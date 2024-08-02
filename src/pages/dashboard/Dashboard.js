@@ -77,8 +77,8 @@ class Dashboard extends React.Component {
               title={
                 <h5>
                   {" "}
-                  Map
-                  <span className="fw-semi-bold">&nbsp;Statistics</span>
+                  Budget
+                  <span className="fw-semi-bold">&nbsp;Dashboard</span>
                 </h5>
               }
               settings
@@ -86,17 +86,39 @@ class Dashboard extends React.Component {
               close
             >
               <p>
-                Status: <strong>Live</strong>
+                Spend Wisely.
               </p>
               <p>
                 <span className="circle bg-default text-white">
                   <i className="fa fa-map-marker" />
                 </span>{" "}
-                &nbsp; 146 Countries, 2759 Cities
+                &nbsp; Dallas, Texas
               </p>
               <div className="row progress-stats">
                 <div className="col-md-9 col-12">
-                  <h6 className="name fw-semi-bold">Foreign Visits</h6>
+                  <h6 className="name fw-semi-bold">Shopping</h6>
+                  <p className="description deemphasize mb-xs text-white">
+                    Some Cool Text
+                  </p>
+                  <Progress
+                    color="danger"
+                    value="200"
+                    className="bg-subtle-blue progress-xs"
+                  />
+                </div>
+                <div className="col-md-3 col-12 text-center">
+                  <span className="status rounded rounded-lg bg-default text-light">
+                    <small>
+                      <AnimateNumber value={200} />%
+                    </small>
+                  </span>
+                </div>
+              </div>
+             
+             
+              <div className="row progress-stats">
+                <div className="col-md-9 col-12">
+                  <h6 className="name fw-semi-bold">Bills & Utilities</h6>
                   <p className="description deemphasize mb-xs text-white">
                     Some Cool Text
                   </p>
@@ -114,9 +136,33 @@ class Dashboard extends React.Component {
                   </span>
                 </div>
               </div>
+
+
               <div className="row progress-stats">
                 <div className="col-md-9 col-12">
-                  <h6 className="name fw-semi-bold">Local Visits</h6>
+                  <h6 className="name fw-semi-bold">Personal</h6>
+                  <p className="description deemphasize mb-xs text-white">
+                    Some Cool Text
+                  </p>
+                  <Progress
+                    color="primary"
+                    value="60"
+                    className="bg-subtle-blue progress-xs"
+                  />
+                </div>
+                <div className="col-md-3 col-12 text-center">
+                  <span className="status rounded rounded-lg bg-default text-light">
+                    <small>
+                      <AnimateNumber value={75} />%
+                    </small>
+                  </span>
+                </div>
+              </div>
+
+
+              <div className="row progress-stats">
+                <div className="col-md-9 col-12">
+                  <h6 className="name fw-semi-bold">Entertainment</h6>
                   <p className="description deemphasize mb-xs text-white">
                     P. to C. Conversion
                   </p>
@@ -136,7 +182,7 @@ class Dashboard extends React.Component {
               </div>
               <div className="row progress-stats">
                 <div className="col-md-9 col-12">
-                  <h6 className="name fw-semi-bold">Sound Frequencies</h6>
+                  <h6 className="name fw-semi-bold">Professional Services</h6>
                   <p className="description deemphasize mb-xs text-white">
                     Average Bitrate
                   </p>
@@ -158,27 +204,6 @@ class Dashboard extends React.Component {
               <p>
                 Tracking: <strong>Active</strong>
               </p>
-              <p>
-                <span className="circle bg-default text-white">
-                  <i className="fa fa-cog" />
-                </span>
-                &nbsp; 391 elements installed, 84 sets
-              </p>
-              <div className="input-group mt">
-                <input
-                  type="text"
-                  className="form-control bg-custom-dark border-0"
-                  placeholder="Search Map"
-                />
-                <span className="input-group-btn">
-                  <button
-                    type="submit"
-                    className={`btn btn-subtle-blue ${s.searchBtn}`}
-                  >
-                    <i className="fa fa-search text-light" />
-                  </button>
-                </span>
-              </div>
             </Widget>
           </Col>
         </Row>
@@ -305,9 +330,9 @@ class Dashboard extends React.Component {
                       <i className="status status-bottom bg-success" />
                     </span>
                     <div>
-                      <h6 className="m-0">Chris Gray</h6>
+                      <h6 className="m-0">ENO</h6>
                       <p className="help-block text-ellipsis m-0">
-                        Hey! What&apos;s up? So many times since we
+                        You've doubled your utilities spending in the past month!
                       </p>
                     </div>
                   </button>
@@ -315,15 +340,15 @@ class Dashboard extends React.Component {
                     <span className="thumb-sm float-left mr">
                       <img
                         className="rounded-circle"
-                        src={peopleA4}
+                        src={peopleA1}
                         alt="..."
                       />
                       <i className="status status-bottom bg-success" />
                     </span>
                     <div>
-                      <h6 className="m-0">Jamey Brownlow</h6>
+                      <h6 className="m-0">ENO</h6>
                       <p className="help-block text-ellipsis m-0">
-                        Good news coming tonight. Seems they agreed to proceed
+                        Laura just passed you in the leaderboards!
                       </p>
                     </div>
                   </button>
@@ -337,9 +362,9 @@ class Dashboard extends React.Component {
                       <i className="status status-bottom bg-primary" />
                     </span>
                     <div>
-                      <h6 className="m-0">Livia Walsh</h6>
+                      <h6 className="m-0">ENO</h6>
                       <p className="help-block text-ellipsis m-0">
-                        Check my latest email plz!
+                      You've gained 0.5% rewards in Entertainment
                       </p>
                     </div>
                   </button>
@@ -353,9 +378,9 @@ class Dashboard extends React.Component {
                       <i className="status status-bottom bg-danger" />
                     </span>
                     <div>
-                      <h6 className="m-0">Jaron Fitzroy</h6>
+                      <h6 className="m-0">ENO</h6>
                       <p className="help-block text-ellipsis m-0">
-                        What about summer break?
+                      You're over your spe
                       </p>
                     </div>
                   </button>

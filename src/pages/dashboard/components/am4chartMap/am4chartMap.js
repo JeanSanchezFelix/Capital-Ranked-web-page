@@ -39,16 +39,19 @@ import s from './am4chartMap.module.scss';
     map.zoomControl.plusButton.scale = .75;
     map.zoomControl.plusButton.label.scale = .75;
     map.zoomControl.plusButton.dx = 5;
+
+
+    
     let plusButtonHoverState = map.zoomControl.plusButton.background.states.create("hover");
-    plusButtonHoverState.properties.fill = am4core.color("#354D84");
+    plusButtonHoverState.properties.fill = am4core.color("#F12C22");
     let minusButtonHoverState = map.zoomControl.minusButton.background.states.create("hover");
-    minusButtonHoverState.properties.fill = am4core.color("#354D84");
+    minusButtonHoverState.properties.fill = am4core.color("#F12C22");
     let polygonTemplate = polygonSeries.mapPolygons.template;
     polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.fill = am4core.color("#474D84");
-    polygonTemplate.stroke = am4core.color("#6979C9")
+    polygonTemplate.fill = am4core.color("#004879");
+    polygonTemplate.stroke = am4core.color("#008AE7")
     let hs = polygonTemplate.states.create("hover");
-    hs.properties.fill = am4core.color("#354D84");
+    hs.properties.fill = am4core.color("#F12C22");
     let citySeries = map.series.push(new am4maps.MapImageSeries());
     citySeries.data = cities;
     citySeries.dataFields.value = "size";
@@ -76,17 +79,16 @@ import s from './am4chartMap.module.scss';
     return (
       <div className={s.mapChart}>
         <div className={s.stats}>
-          <h6 className="mt-1">GEO-LOCATIONS</h6>
+          <h6 className="mt-1">BALANCE</h6>
           <p className="h3 m-0">
             <span className="mr-xs fw-normal">
               <AnimateNumber
-                value={1656843}
+                value={2050.73}
                 initialValue={0}
-                duration={1000} 
-                stepPrecision={0}
+                duration={1500} 
+                stepPrecision={2}
                 formatValue={n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}
               /></span>
-            <i className="fa fa-map-marker" />
           </p>
         </div>
         <div className={s.map} id="map">

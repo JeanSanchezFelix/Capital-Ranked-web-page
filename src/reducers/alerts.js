@@ -2,20 +2,6 @@ import { DISMISS_ALERT } from '../actions/alerts';
 
 const defaultState = {
   alertsList: [
-    {
-      id: 0,
-      title: 'Sales Report',
-      value: 16,
-      color: 'primary',
-      footer: 'Calculating x-axis bias... 65%',
-    },
-    {
-      id: 1,
-      title: 'Personal Responsibility',
-      value: 23,
-      color: 'danger',
-      footer: 'Provide required notes',
-    },
   ],
 };
 

@@ -20,7 +20,7 @@ class Login extends React.Component {
         super(props);
 
         this.state = {
-            email: 'admin@flatlogic.com',
+            email: 'summiteer@capitalone.com',
             password: 'password',
         };
 
@@ -124,9 +124,6 @@ class Login extends React.Component {
                         </form>
                     </Widget>
                 </Container>
-                <footer className="auth-footer">
-                {new Date().getFullYear()} &copy; Light Blue Template - React Admin Dashboard Template Made by <a href="https://flatlogic.com" rel="noopener noreferrer" target="_blank">Flatlogic LLC</a>.
-                </footer>
             </div>
         );
     }
